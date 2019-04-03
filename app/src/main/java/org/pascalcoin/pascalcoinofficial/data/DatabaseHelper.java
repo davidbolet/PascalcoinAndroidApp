@@ -28,7 +28,7 @@ public class DatabaseHelper {
 
     public static final String DEFAULT_PUBLIC_KEY_NAME="default";
     public static final String PASCALCOIN_ASIA_APP_BASE_URL = "https://asia-1.pascalcoin.app";
-    public static final String PASCALCOIN_EUROPE_APP_BASE_URL = "https://asia-1.pascalcoin.app";
+    public static final String PASCALCOIN_EUROPE_APP_BASE_URL = "https://europe-1.pascalcoin.app";
     public static final String PASCALCOIN_APP_ASIA_DEFAULT_NODE_NAME="PascAsia";
     public static final String PASCALCOIN_APP_EUROPE_DEFAULT_NODE_NAME="PascEurope";
 
