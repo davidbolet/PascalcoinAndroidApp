@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:layout_marginBottom="50dp"
+    android:scrollbars="vertical">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".controller.MyAccountsFragment">
+       <LinearLayout
+           android:id="@+id/keyinfo_list_layout"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+        <include layout="@layout/keyinfo_list" />
+       </LinearLayout>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="50dp"
+            app:srcCompat="@drawable/ic_plus" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/import_key_button"
+            android:layout_marginStart="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_import"
+            android:layout_marginBottom="@dimen/fab_margin"
+              />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+</ScrollView>

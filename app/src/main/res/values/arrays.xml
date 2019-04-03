@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="payloadEncriptionMethod">
+        <item>@string/payLoadEncriptionNone</item>
+        <item>@string/payLoadEncriptionDest</item>
+        <item>@string/payLoadEncriptionSender</item>
+        <item>@string/payLoadEncriptionAes</item>
+    </string-array>
+    <string-array name="payloadEncryptionMethodValue" translatable="false">
+        <item>NONE</item>
+        <item>DEST</item>
+        <item>SENDER</item>
+        <item>AES</item>
+    </string-array>
+</resources>

@@ -1,0 +1,240 @@
+<resources>
+    <string name="app_name">Pascalcoin Official</string>
+    <string name="title_home">My accounts</string>
+    <string name="navigation_account_explorer">Explorer</string>
+    <string name="navigation_charts">Charts</string>
+    <string name="title_buy_account">Get an Account</string>
+    <string name="msg_invalid_login">Invalid username/password</string>
+    <string name="home_intro">Thanks for using Pascalcoin wallet! </string>
+    <!-- activity_account -->
+    <string name="title_activity_account">Account</string>
+    <string name="pasc_account_list">My Accounts (%d)</string>
+    <string name="pasc_account_list_txt">My Accounts</string>
+    <string name="pasc_account_explorer">Account\'s Explorer</string>
+
+    <!-- activity login -->
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Not yet registered?</string>
+
+    <!-- activity_register -->
+    <string name="action_register_user">Create user</string>
+    <string name="first_name">First Name*</string>
+    <string name="last_name">Last Name</string>
+    <string name="prompt_email">Email*</string>
+    <string name="prompt_password">Password*</string>
+    <string name="prompt_repeat_password">Repeat password*</string>
+    <string name="require_notifications">Allow this app to send me notifications</string>
+    <string name="require_offers">Allow this app to send me commercial offers</string>
+    <string name="allow_register">I agree, that my personal data (email, name) will be stored on this app and backend servers. I also declare, that I\'ve read, understand and accept the Legal conditions and Privacy policy</string>
+    <string name="legal_conditions">&lt;a href="%s">Terms and conditions &lt;/a></string>
+    <string name="privacy_policy">&lt;a href="%s">Privacy policy&lt;a/a></string>
+    <string name="edit_register_save">Save Changes</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="button_cancel">Cancel</string>
+    <!-- General errors -->
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_user">User %s does not exist! Please register</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_password_requiered">The password is required</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_passwords_not_match">Error: Passwords do not match!</string>
+    <string name="error_google_signin">Error with google single sign-on</string>
+
+
+    <string name="sell_account">Sell Acc.</string>
+    <string name="ops_account">Operations</string>
+    <string name="txt_send">Send PASC</string>
+    <string name="txt_transfer_account">Transfer acc.</string>
+    <string name="show_intro">Show intro text at startup</string>
+    <string name="txt_sending_from">Sending from:</string>
+    <string name="txt_dest_account">Destination account*</string>
+    <string name="txt_fee">Transaction fee</string>
+    <string name="txt_amount">Amount * </string>
+    <string name="payload">Payload...</string>
+    <string name="encription_password">AES encription password</string>
+    <string name="txt_confirm">Confirm</string>
+    <string name="payLoadEncriptionNone">Not encrypted</string>
+    <string name="payLoadEncriptionDest">Destination (only receiver can decrypt)</string>
+    <string name="payLoadEncriptionSender">Sender (only sender can decrypt)</string>
+    <string name="payLoadEncriptionAes">Aes encription with given password</string>
+    <string name="txt_send_pasc_from">Send PASC from account %d-%d (Current balance %.4f PASC). Warning: Despite of connection issues, this operation is almost immediate and cannot be reverted</string>
+    <string name="include_a_payload">Include a payload?</string>
+    <string name="error_destination_account_requiered">Destionation account must be specified</string>
+    <string name="error_invalid_amount">Amount to transfer must be specified and greater that 0</string>
+    <string name="error_not_enogh_pasc">Amount to transfer plus fee must be less than the origin account\'s balance</string>
+    <string name="logout_menu">Logout</string>
+    <string name="about_menu">About Pascalcoin APP</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_pasc_menu">About Pascalcoin currency</string>
+    <string name="error_destination_account_different">Destination account must be different than source account</string>
+    <string name="send_pasc_confirm">Send pasc confirmation. Sending %.4f PASC from account %d-%d to account %d-%d. Are you sure?</string>
+    <string name="action_show_key">Show my selected public key</string>
+    <string name="button_close">Close</string>
+    <string name="txtPublicKey">Public key in B58 HEX format</string>
+    <string name="txt_pk_clipboard">Key copied to clipboard!</string>
+    <string name="mail_sent_text">Thanks for registering! A confirmation email has been sent to the address %s in order to activate the user. Please check your mail and log in again.</string>
+    <string name="txt_send_account">Transfer Account</string>
+    <string name="txt_send_account_intro">Send account  %d-%d (Current balance %.4f PASC) to another public key. This operation calls the function \'changeKey\' on PascalCoin network and is intended to use this account on your personal node, for instance.</string>
+    <string name="txt_scan_QR">Scan QR code</string>
+    <string name="txt_dest_pk">New public key*</string>
+    <string name="txt_pay_account">Account paying the fee*</string>
+    <string name="txt_presentation">Welcome to Pascalcoin\'s first APP! From this app, you can control your accounts (PASA) and operate with your coins (PASC).\n\tTo operate, you can create a new Private/Public key pair or import an existing key</string>
+    <string name="search_by_number">Search by number...</string>
+    <string name="search_by_name">Search by name...</string>
+    <string name="error_not_enogh_pasc_to_transfer">Payer account does not have enough balance to pay the fee. Please select another account as payer or select a lower fee</string>
+    <string name="send_acc_confirm">Are you sure that you want to transfer account %d-%d to the public key %s? This action cannot be reverted</string>
+    <string name="error_invalid_account_specified">Invalid account specified</string>
+    <string name="error_user_not_enabled">Error: User %s exist but is still not enabled! Check your email for activation link!</string>
+    <string name="error_timeout">Error connecting with the server :( Please try again in a little while</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_password_title">Forgot password</string>
+    <string name="txt_password_link_sent">An email has been sent with instructions to reset password</string>
+    <string name="txt_register_ok">User Register</string>
+    <string name="msg_user_updated">User %s successfully updated</string>
+    <string name="account_no_operations">This account has no operations</string>
+    <string name="txt_session_expired">Your session with backend server has expired, please login again</string>
+    <string name="no_accounts_found">No accounts found matching criteria</string>
+    <string name="error_server_security">There was an authorization problem while contacting backend server,the session probably expired. Please log in again. Please login again</string>
+    <string name="txt_buy_account_intro">To operate with PascalCoin, you need a PASA (acronym for PAScalcoin Account). A PASA is the bridge between your private key and the PascalCoin network, from where you can receive and send your PASC (PAScal Coins).</string>
+    <string name="buy_pascalcoin_account">Buy PascalCoin Account for %.2f %s</string>
+    <string name="transaction_created">Account successfully bought! It will be available in a few minutes. you can track the operation &lt;a href="%s">Here&lt;/a> Refresh \'My accounts\' button</string>
+    <string name="pascalcoin_info">About Pacalcoin currency</string>
+    <string name="txt_pascalcoin_intro">PascalCoin is a very innovative cryptocurrency that offers very useful and unique features, like infinite scaling, user-friendly account names, etc... You can find more information about it on the following resources:</string>
+    <string name="txt_link_pascalcoin"><a href="http://pascalcoin.org/">PascalCoin website</a></string>
+    <string name="txt_link_pascalcoin_discord"><a href="https://discord.gg/sJqcgtD">Join PascalCoin,on Discord</a></string>
+    <string name="txt_link_pascalcoin_twitter"><a href="https://twitter.com/PascalCoin">Follow PascalCoin on Twitter</a></string>
+    <string name="txt_link_pascalcoin_facebook"><a href="https://www.facebook.com/PascalCoin-850645181770093">Follow PascalCoin on Facebook</a></string>
+    <string name="app_info">About PascalCoin App</string>
+    <string name="txt_app_intro">From this app, you can manage your PASC and PASA. However, as it is experimental software, do it with care! Due to current limitations on the structure, take the following into account: 1-Your Public and Private key were created on our backend server when you registered. By now, the Private Key is stored on the server and there is no way to export it. 2-The server has a reasonable protection. However, it can be hacked as any server exposed to internet. 3-You can buy/transfer your accounts to the app. For holding your assets however, the best way is to keep your account in your computer\'s wallet. </string>
+    <string name="block_op">Block/Op</string>
+    <string name="datetime">Date Time</string>
+    <string name="sender">Sender</string>
+    <string name="amount">Amount</string>
+    <string name="receiver">Receiver</string>
+    <string name="no_payload">No payload included</string>
+    <string name="could_not_decrypt_payload">Payload could not be decrypted</string>
+    <string name="payload_passwords">Password to decode payload (you can specify some comma separated)</string>
+    <string name="txtUserFunds">Total: %.2f PASC (%.2f %s)</string>
+    <string name="prompt_current_password">Current password:</string>
+    <string name="prompt_new_password">New password:</string>
+    <string name="prompt_repeat_new_password">Repeat new password:</string>
+    <string name="change_password">Change password</string>
+    <string name="descr_overflow_button">New operation</string>
+    <string name="change_account_info">Change account info</string>
+    <string name="more_ops">More...</string>
+    <string name="txt_change_account">Change Account info</string>
+    <string name="txt_change_account_short">Chg Acc inf</string>
+    <string name="txt_change_account_intro">Change account\'s info: You can name the account with a unique name or give it and special type.</string>
+    <string name="txt_new_account_name">New account name</string>
+    <string name="txt_new_account_type">New account type</string>
+    <string name="error_change_account_requiered">You must specify a new name for the account, a new type or both</string>
+    <string name="change_acc_confirm">Are you sure that you want to change name of the account %d-%d to %s and/or its type to %d?</string>
+    <string name="error_too_long">Account name must be less that 65 chars</string>
+    <string name="error_too_short">Account name must have at least 3 chars</string>
+    <string name="error_invalid_chars">Error not invalid chars found! Account names cannot contain space characters and must not start with a number</string>
+    <string name="error_too_many_requests">Too many unsuccessful login attempts! User has been disabled for 10 minutes</string>
+    <string name="delist_account">Cancel sell</string>
+    <string name="list_account_sale">List account %d for sale</string>
+    <string name="txt_sell_account_intro">From this screen, you can mark an account for sale, specifying a price (in PASC) for it, and also the account that will receive the amount payed. By now only public sales are implemented.</string>
+    <string name="txt_seller_account">Account seller (will get the amount)</string>
+    <string name="txt_price">Price</string>
+    <string name="error_sell_price_account_requiered">You must specify a price for the account</string>
+    <string name="sell_acc_confirm">Are you sure that you want to list account %d-%d for sale at %.4f PASC?</string>
+    <string name="logout_confirm">Are you sure that you want to logout?</string>
+    <string name="delist_account_sale">Cancel sell of account %d</string>
+    <string name="txt_cancel_sell_account_intro">From this screen, you can delist selected account for sale. The account will be removed from public listing.</string>
+    <string name="cancel_sell_acc_confirm">Are you sure that you want to cancel the listing of the account %d-%d?</string>
+    <string name="buy_acc_confirm">Are you sure that you want to buy the account %d-%d?</string>
+    <string name="error_max_zero_fee_operations">Error, zero-fee operations are limited to 1 per block per account</string>
+    <string name="buy_an_account_with_btc">Buy an account with Bitcoin (Btc)</string>
+    <string name="buy_an_account_with_eth">Buy an account with Ethereum (Eth)</string>
+    <string name="buy_an_account_with_pasc">Buy an account with PascalCoin (Pasc)</string>
+    <string name="transation_created">Transaction created.</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="title_menu_connection_nodes">Nodes</string>
+    <string name="title_menu_private_keys">Private keys</string>
+    <!-- Strings related to Settings -->
+
+    <!-- General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_display_name">Preferred Currency</string>
+    <string name="pref_default_display_name">USD</string>
+    <string name="pref_title_add_friends_to_messages">Prefered Currency</string>
+    <string-array name="pref_example_list_titles">
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+    <string name="selected_public_key_title">Selected Key</string>
+    <string name="keys_add">Add Key...</string>
+    <string name="selected_node_title">Node to connect</string>
+    <string name="node_add">Add Node...</string>
+    <string name="operation_deployed">Operation successfully genrated and send to Pascalcoin network!</string>
+    <string name="node_name">Node name</string>
+    <string name="node_ip">Node URI</string>
+    <string name="check_connection">Check connection</string>
+    <string name="error_node_name_requiered">Node name is required</string>
+    <string name="error_node_url_requiered">Node Url must be specified</string>
+    <string name="msg_node_saved">Node saved!</string>
+    <string name="error_node_name_already_exist">A node with given name already exist</string>
+    <string name="new_key">New Private Key</string>
+    <string name="private_key_name">Private Key name</string>
+    <string name="display_private_key">Display private key</string>
+    <string name="error_key_name_requiered">Private key name required</string>
+    <string name="msg_key_saved">Private key saved!</string>
+    <string name="generate_new_key">Import existing key</string>
+    <string name="private_key_value">(Private key)</string>
+    <string name="button_generate">Generate!</string>
+    <string name="private_key_type">Key type</string>
+    <string name="edit_key_save">Save private key</string>
+    <string name="private_key_password">Private key password (not stored)</string>
+    <string name="encrypt_new_key">Encrypt new key</string>
+    <string name="error_key_password_required">Encrypting password required</string>
+    <string name="private_key_import">Paste private key in raw format</string>
+    <string name="private_key_import_encrypted">Paste encrypted private key</string>
+    <string name="error_private_key_not_typed">Private key cannot be empty</string>
+    <string name="error_decrypting_private_key">Error decrypting password: %s</string>
+    <string name="error_private_key_not_valid">Invalid private key (%s)</string>
+    <string name="speech_not_supported">Voice recognition is not available</string>
+    <string name="speech_prompt">Voice speech</string>
+    <string name="search_hint">Account number or name</string>
+    <string name="max_num_accounts">Number of accounts to retrieve</string>
+    <string name="advanced_search">Advanced search</string>
+    <string name="txt_frag_buy_account_intro">From this screen, you can buy the selected account</string>
+    <string name="txt_pay_buy_account">Account paying</string>
+    <string name="buy_account_sale">Buy the account %d</string>
+    <string name="txt_delete_node">Delete Node</string>
+    <string name="delete_node_confirm">Are you sure that you want to delete the node %s?</string>
+    <string name="node_deleted">Node %s has been deleted</string>
+    <string name="instructions">Place your fingertip on the Home button to verify your identity</string>
+    <string name="txt_use_fingerprint">Use Fingerprint</string>
+    <string name="txt_delete_key">Delete Private Key</string>
+    <string name="txt_delete_key_confirm">Are you sure to delete Private key %s? You will not be able to access Accounts and PASC depending on it!!!</string>
+    <string name="key_is_encrypted">This Private key is encrypted. Input password to decode it:</string>
+    <string name="connection_error">Connection error</string>
+    <string name="txt_connection_error">There was a timeout connecting with the backend server. You can now try again with the refresh button, or change your node connection settings on Settings or in preferences.</string>
+    <string name="edit_private_key">Edit Private key</string>
+    <string name="button_export">Export private key</string>
+    <string name="encrypt_key">Keep private key encrypted (requires password input on each use)</string>
+    <string name="private_key_encrypted_value">Encrypted private key (Wallet format)</string>
+    <string name="private_key_raw_value">Raw private key (be careful!)</string>
+    <string name="search_hint_name">Account name</string>
+    <string name="search_hint_number">Account number</string>
+    <string name="txt_balance_range">Filter by balance (balance between)</string>
+    <string name="txt_select_key">Select key</string>
+    <string name="txt_filter_accounts_by_one_of_my_keys">Filter accounts by one of my keys:</string>
+    <string name="txt_show_only_accounts_for_sale">Show only accounts for sale</string>
+    <string name="txt_search">Search</string>
+    <string name="import_key_qr">Read key from QR</string>
+    <string name="import_private_key">Import wallet\'s private key</string>
+    <string name="keep_key_encrypted">Keep key encrypted in android database (More secure, but password will be asked on every usage)</string>
+    <string name="paste_key">Paste key from clipboard</string>
+    <string name="default_node">https://europe-1.pascalcoin.app</string>
+
+</resources>

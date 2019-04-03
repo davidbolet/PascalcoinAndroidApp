@@ -1,0 +1,240 @@
+﻿<resources>
+    <string name="app_name">Pascalcoin官方钱包</string>
+    <string name="title_home">我的账户</string>
+    <string name="navigation_account_explorer">账户浏览器</string>
+    <string name="navigation_charts">排行图表</string>
+    <string name="title_buy_account">获得一个账户</string>
+    <string name="msg_invalid_login">无效的用户名/密码</string>
+    <string name="home_intro">感谢您使用Pascalcoin钱包! </string>
+    <!-- activity_account -->
+    <string name="title_activity_account">账户</string>
+    <string name="pasc_account_list">我的账户 (%d)</string>
+    <string name="pasc_account_list_txt">我的账户</string>
+    <string name="pasc_account_explorer">账户浏览器</string>
+
+    <!-- activity login -->
+    <string name="action_sign_in">登录</string>
+    <string name="action_register">没有注册？</string>
+
+    <!-- activity_register -->
+    <string name="action_register_user">创建用户</string>
+    <string name="first_name">名*</string>
+    <string name="last_name">姓</string>
+    <string name="prompt_email">电子邮件*</string>
+    <string name="prompt_password">密码*</string>
+    <string name="prompt_repeat_password">重复输入密码*</string>
+    <string name="require_notifications">允许这个应用程序发送通知给我</string>
+    <string name="require_offers">允许应用程序发送商业推送给我</string>
+    <string name="allow_register">我同意，我的个人信息 (电子邮件, 姓名) 将会被存储在该应用的后台服务器上。 本人亦声明已阅读和了解并接受有关的法律条款及私隐政策。</string>
+    <string name="legal_conditions">&lt;a href="%s">条款和条件 &lt;/a></string>
+    <string name="privacy_policy">&lt;a href="%s">隐私政策&lt;a/a></string>
+    <string name="edit_register_save">保存更改</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="button_cancel">取消</string>
+    <!-- General errors -->
+    <string name="error_invalid_email">此电子邮件地址无效</string>
+    <string name="error_invalid_password">此密码长度太短</string>
+    <string name="error_invalid_user">用户 %s 不存在!请注册</string>
+    <string name="error_incorrect_password">此密码不正确</string>
+    <string name="error_password_requiered">需要输入密码</string>
+    <string name="error_field_required">这是必填栏</string>
+    <string name="error_passwords_not_match">错误:密码不匹配!</string>
+    <string name="error_google_signin">Google 谷歌单独登录时错误</string>
+
+
+    <string name="sell_account">出售账户</string>
+    <string name="ops_account">操作</string>
+    <string name="txt_send">发送PASC</string>
+    <string name="txt_transfer_account">转移账户.</string>
+    <string name="show_intro">启动时显示简介</string>
+    <string name="txt_sending_from">发送:</string>
+    <string name="txt_dest_account">目标账户*</string>
+    <string name="txt_fee">交易费</string>
+    <string name="txt_amount">数量 * </string>
+    <string name="payload">有效载荷(Payload...)</string>
+    <string name="encription_password">AES加密密码</string>
+    <string name="txt_confirm">确认</string>
+    <string name="payLoadEncriptionNone">不加密的</string>
+    <string name="payLoadEncriptionDest">接收方(只有接收方可以解密)</string>
+    <string name="payLoadEncriptionSender">发送方(只有发送方可以解密)</string>
+    <string name="payLoadEncriptionAes">用设定的密码进行AES加密</string>
+    <string name="txt_send_pasc_from">从账户中发送PASC %d-%d (当前余额 %.4f PASC)。警告：即使存在连接问题，此操作几乎是立即执行且无法撤消！</string>
+    <string name="include_a_payload">包含一个有效载荷payload?</string>
+    <string name="error_destination_account_requiered">必须指定目标账户</string>
+    <string name="error_invalid_amount">必须指定要转移的金额，并且大于0</string>
+    <string name="error_not_enogh_pasc">要转账的金额加上费用必须小于原始账户的余额</string>
+    <string name="logout_menu">注销退出</string>
+    <string name="about_menu">关于Pascalcoin应用程序</string>
+    <string name="action_settings">设置</string>
+    <string name="about_pasc_menu">关于Pascalcoin加密货币</string>
+    <string name="error_destination_account_different">目标账户必须与源账户不同</string>
+    <string name="send_pasc_confirm">发送PASC确认。发送 %.4f PASC从账户 %d-%d 到 %d-%d. 确定?</string>
+    <string name="action_show_key">显示我选择的公钥</string>
+    <string name="button_close">关闭</string>
+    <string name="txtPublicKey">B58十六进制格式的公钥</string>
+    <string name="txt_pk_clipboard">复制公钥到剪贴板!</string>
+    <string name="mail_sent_text">感谢注册!确认邮件已发送到该地址 %s 以便激活用户。请检查您的邮件并再次登录。</string>
+    <string name="txt_send_account">转移账户</string>
+    <string name="txt_send_account_intro">发送账户  %d-%d (当前余额 %.4f PASC) 到另一个公钥. 此操作调用函数 \'changeKey\' 例如，在Pascalcoin网络上，并且在您的个人节点上将无法再使用此账户。</string>
+    <string name="txt_scan_QR">扫描二维码</string>
+    <string name="txt_dest_pk">新的公钥*</string>
+    <string name="txt_pay_account">支付费用的账户*</string>
+    <string name="txt_presentation">欢迎使用Pascalcoin的第一个移动应用程序!从这个程序,您可以控制您的账户（pasa）并使用您的硬币（pasc）进行操作.\n\tTo 操作, 您可以创建新的私钥/公钥对或导入现有的密钥</string>
+    <string name="search_by_number">通过账号搜索...</string>
+    <string name="search_by_name">通过名字搜索...</string>
+    <string name="error_not_enogh_pasc_to_transfer">付款的账户没有足够余额支付费用。请选择另一个账户付款或选择较低的费用</string>
+    <string name="send_acc_confirm">您确定要转账吗 %d-%d 到公钥 %s? 此操作无法还原</string>
+    <string name="error_invalid_account_specified">无效的指定账户</string>
+    <string name="error_user_not_enabled">错误：用户 %s 存在但仍然未启用！检查您的电子邮件激活链接！</string>
+    <string name="error_timeout">连接服务器时出错:( 请稍后重试</string>
+    <string name="forgot_password">忘记了密码?</string>
+    <string name="forgot_password_title">忘记了密码</string>
+    <string name="txt_password_link_sent">已发送一封电子邮件，重置密码</string>
+    <string name="txt_register_ok">用户注册</string>
+    <string name="msg_user_updated">用户 %s 成功更新</string>
+    <string name="account_no_operations">此账户没有任何操作</string>
+    <string name="txt_session_expired">您与后端服务器的连接已过期，请重新登录</string>
+    <string name="no_accounts_found">没有发现匹配的账户</string>
+    <string name="error_server_security">后端服务器时出现授权问题，连接可能已过期。请重新登录。请重新登录</string>
+    <string name="txt_buy_account_intro">要使用钱包，您首先需要获得一个账户/PASA (PascalCoin Account的缩写)。PASA是您的私钥和PascalCoin网络之间的桥梁，在这里您可以接收和发送您的PASC (PascalCoin)。</string>
+    <string name="buy_pascalcoin_account">购买Pascalcoin账户 %.2f %s</string>
+    <string name="transaction_created">账户购买成功！等待下一个区块,5分钟内。你可以跟踪操作 &lt;a href="%s">Here&lt;/a> 刷新 \'我的账户\' 按钮</string>
+    <string name="pascalcoin_info">关于Pacalcoin加密货币</string>
+    <string name="txt_pascalcoin_intro">PascalCoin是一种非常具有创新性的加密货币，它提供了非常卓越和独特的功能，如无限扩展、0确定安全保护，用户友好的账户名等等……。您可以在以下资源中找到有关它的更多信息：</string>
+    <string name="txt_link_pascalcoin"><a href="http://pascalcoin.org/">PascalCoin官方网站</a></string>
+    <string name="txt_link_pascalcoin_discord"><a href="https://discord.gg/sJqcgtD">加入PascalCoin,全球社区Discord</a></string>
+    <string name="txt_link_pascalcoin_twitter"><a href="https://twitter.com/PascalCoin">在Twitter上关注PascalCoin</a></string>
+    <string name="txt_link_pascalcoin_facebook"><a href="https://www.facebook.com/PascalCoin-850645181770093">在Facebook上关注PascalCoin</a></string>
+    <string name="app_info">关于PascalCoin应用</string>
+    <string name="txt_app_intro">通过这个应用程序，您可以管理您的PASC和PASA。但是，由于它目前任然处于体验改进阶段，所以要小心操作！由于当前结构的限制，请考虑以下因素：1-您的公钥和私钥是在注册时在后端服务器上创建的。到目前为止，私钥存储在服务器上，无法导出它。2-服务器具有合理的保护。然而，它可以像任何暴露在互联网上的服务器一样被黑客攻击。3-您可以购买/将账户转移到应用程序。然而，对于持有你的资产，最安全的方法是把你的账户放在你电脑的钱包里。 </string>
+    <string name="block_op">区块/操作</string>
+    <string name="datetime">日期时间</string>
+    <string name="sender">发送方</string>
+    <string name="amount">数量</string>
+    <string name="receiver">接收者</string>
+    <string name="no_payload">不包含有效载荷(payload)</string>
+    <string name="could_not_decrypt_payload">无法解密有效载荷(payload)</string>
+    <string name="payload_passwords">解码有效载荷(payload)的密码（可以使用逗号分隔）。</string>
+    <string name="txtUserFunds">合计: %.2f PASC (%.2f %s)</string>
+    <string name="prompt_current_password">当前密码:</string>
+    <string name="prompt_new_password">新的密码:</string>
+    <string name="prompt_repeat_new_password">重复新密码:</string>
+    <string name="change_password">更改密码</string>
+    <string name="descr_overflow_button">新的操作</string>
+    <string name="change_account_info">更改账户信息</string>
+    <string name="more_ops">更多...</string>
+    <string name="txt_change_account">更改账户信息</string>
+    <string name="txt_change_account_short">账户更改信息</string>
+    <string name="txt_change_account_intro">更改账户信息：您可以用唯一的名称命名账户，也可以为其指定特殊类型。</string>
+    <string name="txt_new_account_name">新账户名</string>
+    <string name="txt_new_account_type">新账户类型</string>
+    <string name="error_change_account_requiered">必须为账户指定新名称、新类型或两者都指定。</string>
+    <string name="change_acc_confirm">您确定要更改账户名称由 %d-%d 改为 %s 与/或其类型为 %d?</string>
+    <string name="error_too_long">账户名称必须小于65个字符</string>
+    <string name="error_too_short">账户名称必须至少有3个字符</string>
+    <string name="error_invalid_chars">错误：无效字符！账户名不能包含空格字符，且不能以数字开头。</string>
+    <string name="error_too_many_requests">登录尝试失败次数太多！用户已被禁用10分钟。</string>
+    <string name="delist_account">取消出售</string>
+    <string name="list_account_sale">列表账户 %d 待售</string>
+    <string name="txt_sell_account_intro">在这个页面上，您可以标记一个要出售的账户，指定它的价格（在PASC中），以及将收到支付金额的账户。到目前为止，只实行公开销售。</string>
+    <string name="txt_seller_account">账户卖家（将获得账户金额）</string>
+    <string name="txt_price">价格</string>
+    <string name="error_sell_price_account_requiered">您必须为账户指定一个价格</string>
+    <string name="sell_acc_confirm">您确定要列出账户吗 %d-%d 以 %.4f PASC出售？</string>
+    <string name="logout_confirm">您确定退出吗?</string>
+    <string name="delist_account_sale">取消出售账户 %d</string>
+    <string name="txt_cancel_sell_account_intro">在此页面中，您可以将选择取消出售的账户。该账户将从公开列表中删除。</string>
+    <string name="cancel_sell_acc_confirm">您确定要取消账户列表吗 %d-%d?</string>
+    <string name="buy_acc_confirm">你确定要购买这个账户吗 %d-%d?</string>
+    <string name="error_max_zero_fee_operations">错误，每个账户的零费用操作限制为每个块1次（即每5分钟一次）</string>
+    <string name="buy_an_account_with_btc">用比特币（BTC）购买账户</string>
+    <string name="buy_an_account_with_eth">在以太坊（ETH）购买账户</string>
+    <string name="buy_an_account_with_pasc">用pascalcoin（PASC）购买账户</string>
+    <string name="transation_created">创建的事务.</string>
+    <string name="title_activity_settings">设置</string>
+
+    <string name="title_menu_connection_nodes">节点</string>
+    <string name="title_menu_private_keys">私钥</string>
+    <!-- Strings related to Settings -->
+
+    <!-- General settings -->
+    <string name="pref_header_general">基本设置</string>
+
+    <string name="pref_title_display_name">首选货币</string>
+    <string name="pref_default_display_name">美元/USD</string>
+    <string name="pref_title_add_friends_to_messages">优先的货币</string>
+    <string-array name="pref_example_list_titles">
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+    <string name="selected_public_key_title">选择公钥</string>
+    <string name="keys_add">添加公钥...</string>
+    <string name="selected_node_title">连接节点</string>
+    <string name="node_add">添加节点...</string>
+    <string name="operation_deployed">操作成功生成并发送到Pascalcoin网络!</string>
+    <string name="node_name">节点名称</string>
+    <string name="node_ip">节点URI</string>
+    <string name="check_connection">检查连接</string>
+    <string name="error_node_name_requiered">需要节点名</string>
+    <string name="error_node_url_requiered">必须指定节点Url</string>
+    <string name="msg_node_saved">节点已保存</string>
+    <string name="error_node_name_already_exist">指定名称的节点已存在！</string>
+    <string name="new_key">新私钥</string>
+    <string name="private_key_name">私钥名称</string>
+    <string name="display_private_key">显示私钥</string>
+    <string name="error_key_name_requiered">需要私钥名称</string>
+    <string name="msg_key_saved">私钥已保存！</string>
+    <string name="generate_new_key">导入现有私钥</string>
+    <string name="private_key_value">（私钥）</string>
+    <string name="button_generate">生成!</string>
+    <string name="private_key_type">私钥类型</string>
+    <string name="edit_key_save">保存私钥</string>
+    <string name="private_key_password">私钥密码(未存储)</string>
+    <string name="encrypt_new_key">新的密钥加密</string>
+    <string name="error_key_password_required">需要加密密码</string>
+    <string name="private_key_import">以原始格式粘贴私钥</string>
+    <string name="private_key_import_encrypted">粘贴加密私钥</string>
+    <string name="error_private_key_not_typed">私钥不能为空</string>
+    <string name="error_decrypting_private_key">错误解密私钥: %s</string>
+    <string name="error_private_key_not_valid">无效的私钥 (%s)</string>
+    <string name="speech_not_supported">语音识别不可用</string>
+    <string name="speech_prompt">语音发言</string>
+    <string name="search_hint">账户或名称</string>
+    <string name="max_num_accounts">要检索的账户数目</string>
+    <string name="advanced_search">高级搜索</string>
+    <string name="txt_frag_buy_account_intro">在这个页面上，您可以购买所选账户</string>
+    <string name="txt_pay_buy_account">账户支付</string>
+    <string name="buy_account_sale">购买账户 %d</string>
+    <string name="txt_delete_node">删除节点</string>
+    <string name="delete_node_confirm">您确定要删除节点吗 %s?</string>
+    <string name="node_deleted">节点 %s 已被删除</string>
+    <string name="instructions">将指尖放在“主页”按钮上以验证您的身份</string>
+    <string name="txt_use_fingerprint">使用指纹识别</string>
+    <string name="txt_delete_key">删除私钥</string>
+    <string name="txt_delete_key_confirm">确定要删除私钥吗 %s? 你将无法访问它上面的账户和PASC！！！</string>
+    <string name="key_is_encrypted">这个私钥是加密的。输入密码进行解码：</string>
+    <string name="connection_error">连接错误</string>
+    <string name="txt_connection_error">与后端服务器的连接超时。现在可以使用“刷新”按钮重试，或者在“设置”或“首选项”中更改节点连接设置。</string>
+    <string name="edit_private_key">编辑私钥</string>
+    <string name="button_export">导出私钥</string>
+    <string name="encrypt_key">加密私钥（每次使用都需要输入密码）</string>
+    <string name="private_key_encrypted_value">加密私钥(钱包格式)</string>
+    <string name="private_key_raw_value">原始私钥（小心！）</string>
+    <string name="search_hint_name">账户名称</string>
+    <string name="search_hint_number">账户编号</string>
+    <string name="txt_balance_range">按余额筛选(两者之间)</string>
+    <string name="txt_select_key">选择密钥</string>
+    <string name="txt_filter_accounts_by_one_of_my_keys">用我的某个密钥过滤账户：</string>
+    <string name="txt_show_only_accounts_for_sale">仅显示待出售账户</string>
+    <string name="txt_search">搜索</string>
+    <string name="import_key_qr">从二维码中导入密钥</string>
+    <string name="import_private_key">导入钱包的私钥</string>
+    <string name="keep_key_encrypted">在Android数据库中对密钥进行加密(更安全，但每次使用都会要求输入密码)</string>
+    <string name="paste_key">从剪贴板粘贴密钥</string>
+    <string name="default_node">https://asia-1.pascalcoin.app</string>
+
+</resources>

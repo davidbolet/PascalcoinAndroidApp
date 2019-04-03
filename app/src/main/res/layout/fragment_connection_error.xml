@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.BuyAccountFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_alert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:src="@android:drawable/ic_dialog_alert"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPrice"
+
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="@string/connection_error"
+        android:textSize="@dimen/txt_title_size" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewIntroAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_alert"
+        android:layout_margin="15dp"
+        android:text="@string/txt_connection_error"
+        android:textSize="@dimen/txt_intro_size" />
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/textViewIntroAbout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_retry"
+        android:src="@drawable/ic_sync_black_24dp"
+
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+</ScrollView>

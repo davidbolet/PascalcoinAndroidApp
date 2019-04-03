@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Switch
+        android:id="@+id/switchPayload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/include_a_payload" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/transfer_payload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="127"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:hint="@string/payload"
+            android:inputType="textMultiLine" />
+        </android.support.design.widget.TextInputLayout>
+        <Spinner
+            android:id="@+id/spinnerEncriptionMethod"
+            android:layout_width="wrap_content"
+            android:entries="@array/payloadEncriptionMethod"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/encryption_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:ems="10"
+            android:hint="@string/encription_password"
+            android:inputType="textPassword" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>

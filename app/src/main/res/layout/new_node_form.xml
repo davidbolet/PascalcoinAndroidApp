@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="New Node"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/txt_title_size"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txt_node_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="127"
+            android:layout_marginTop="5dp"
+            android:visibility="visible"
+            android:hint="@string/node_name"
+            android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txt_node_uri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:ems="10"
+            android:hint="@string/node_ip"
+            android:inputType="textUri" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/btn_new_node_check"
+            android:tooltipText="@string/check_connection"
+            android:background="@drawable/ic_sync_black_24dp"
+            android:hint="@string/check_connection"
+            />
+        </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_register_save"
+            android:id="@+id/btn_new_node_save"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_cancel"
+            android:id="@+id/btn_new_node_cancel"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+</LinearLayout>

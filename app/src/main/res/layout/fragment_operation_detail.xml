@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".controller.OperationDetailFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Op Hash"
+        android:id="@+id/textViewOpHashTitle"/>
+    <EditText
+        android:id="@+id/editTextOpHash"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOpHashTitle"
+        android:text="7F0903007DD105001C00000020EB63E9EA18A0D71F1D3DF7EB15393CE997431C"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/editTextOpHash"
+        android:text="Block/Op: 123453/23"
+        android:id="@+id/textViewBlock"/>
+    <TextView
+        android:id="@+id/textViewDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Date Time: 24/04/2018 12:23:18"
+        android:layout_below="@id/textViewBlock"
+        />
+    <TextView
+        android:id="@+id/textViewSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDateTime"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Sender: 123453"
+        />
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSender"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Amount: 123,453"
+        />
+    <TextView
+        android:id="@+id/textViewReceiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAmount"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Receiver: 123453"
+        />
+    <TextView
+        android:id="@+id/textViewOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewReceiver"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Tx-Out, 0,0065 PASC "
+        />
+    <EditText
+        android:id="@+id/editTextPayload"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOperation"
+        android:text="7F0903007DD105001C00000020EB63E9EA18A0D71F1D3DF7EB15393CE997431C"
+        />
+    <EditText
+        android:id="@+id/editTextDecodedPayload"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPayload"
+        android:text="Pepito de los palotes"
+        />
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextDecodedPayload"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_close" />
+</RelativeLayout>
+</ScrollView>

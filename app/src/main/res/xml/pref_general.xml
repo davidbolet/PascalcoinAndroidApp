@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="180"
+        android:entries="@array/pref_example_list_titles"
+        android:entryValues="@array/pref_example_list_values"
+        android:key="default_currency"
+        android:icon="@drawable/ic_money"
+        android:negativeButtonText="@null"
+        android:title="@string/pref_title_display_name" />
+    <CheckBoxPreference android:title="@string/txt_use_fingerprint"
+        android:defaultValue="false"
+        android:icon="@drawable/ic_fingerprint"
+        android:summary="If selected, app will ask for your fingerprint on startup"
+        android:key="application_fingerprint" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="payload_passwords"
+        android:icon="@drawable/ic_passwords"
+        android:maxLines="4"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:title="@string/payload_passwords" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <org.pascalcoin.pascalcoinofficial.data.KeysListPreferences
+        android:key="selected_pubkey"
+        android:icon="@drawable/ic_keys"
+        android:positiveButtonText="@string/keys_add"
+        android:title="@string/selected_public_key_title" />
+    <org.pascalcoin.pascalcoinofficial.data.NodeListPreferences
+        android:key="selected_node"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:positiveButtonText="@string/node_add"
+        android:title="@string/selected_node_title" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="number"
+        android:key="numAccounts"
+        android:maxLines="1"
+        android:maxLength="3"
+        android:icon="@drawable/ic_reorder_black_24dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:title="@string/max_num_accounts" />
+</PreferenceScreen>

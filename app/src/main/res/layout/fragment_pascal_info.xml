@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.BuyAccountFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/textViewPrice"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPrice"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="@string/pascalcoin_info"
+        android:textSize="@dimen/txt_title_size" />
+    <TextView
+        android:id="@+id/textViewIntroAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/txt_pascalcoin_intro"
+        android:textSize="@dimen/txt_intro_size" />
+    <TextView
+        android:id="@+id/link_pascalcoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/textViewIntroAbout"
+        android:text="@string/txt_link_pascalcoin"/>
+    <TextView
+        android:id="@+id/link_pascalcoin_discord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/link_pascalcoin"
+        android:text="@string/txt_link_pascalcoin_discord"/>
+    <TextView
+        android:id="@+id/link_pascalcoin_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/link_pascalcoin_discord"
+        android:text="@string/txt_link_pascalcoin_twitter"/>
+    <TextView
+        android:id="@+id/link_pascalcoin_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/link_pascalcoin_twitter"
+        android:text="@string/txt_link_pascalcoin_facebook"/>
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/link_pascalcoin_facebook"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_close" />
+
+</RelativeLayout>
+</ScrollView>

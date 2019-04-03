@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".controller.SendPascFragment">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/txt_title_size"
+            android:id="@+id/send_pasc_title"
+            android:text="@string/buy_account_sale" />
+    </android.support.design.widget.AppBarLayout>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".controller.BuyAccountFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_intro_size"
+        android:id="@+id/send_account_intro"
+        android:text="@string/txt_frag_buy_account_intro" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/txt_title_size"
+            android:text="@string/txt_pay_account" />
+        <Spinner
+            android:id="@+id/spinAccountPayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:hint="@string/txt_pay_account"
+            android:spinnerMode="dropdown"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtAccountSeller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ems="12"
+                android:layout_marginTop="10dp"
+                android:hint="@string/txt_seller_account" />
+        </android.support.design.widget.TextInputLayout>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/sell_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:hint="@string/txt_price"
+            android:inputType="numberDecimal" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/transfer_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="@string/txt_fee"
+        android:inputType="numberDecimal" />
+    </android.support.design.widget.TextInputLayout>
+    <include
+        layout="@layout/payload_form" />
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_confirm" />
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_cancel" />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

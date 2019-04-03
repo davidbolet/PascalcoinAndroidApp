@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:layout_marginBottom="50dp"
+    android:scrollbars="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".controller.MyAccountsFragment">
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/textViewFunds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp" />
+
+        <TextView
+            android:id="@+id/textViewMyAccounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewPrice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/pasc_account_list"
+            android:textSize="@dimen/txt_title_size" />
+
+        <TextView
+            android:id="@+id/textViewResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMyAccounts"
+            android:layout_marginTop="5dp"
+            android:text="@string/pasc_account_list_txt"
+            android:textSize="@dimen/txt_intro_size" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_my_accounts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textViewResume"
+            android:layout_marginLeft="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="5dp"
+            />
+    </RelativeLayout>
+</ScrollView>

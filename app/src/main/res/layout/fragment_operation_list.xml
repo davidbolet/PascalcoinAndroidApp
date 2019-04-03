@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<org.pascalcoin.pascalcoinofficial.controller.RecyclerViewEmptySupport
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listOperations"
+    android:name="org.pascalcoin.pascalcoinofficial.controller.OperationListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:listitem="@layout/fragment_operation"
+    tools:context=".controller.OperationListFragment"
+ />
+    <TextView android:id="@+id/list_empty"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_no_operations"
+        />
+</FrameLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/import_private_key"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/txt_title_size" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_import_key_name"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/private_key_name"
+                android:inputType="text"
+                android:maxLength="127"
+                android:visibility="visible" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:id="@+id/layout_input_key_password"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_import_key_password"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/private_key_password"
+                android:inputType="textPassword"
+                android:visibility="visible" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/switch_encrypt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/keep_key_encrypted" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/layout_create_key_2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_read_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/import_key_qr"
+                android:text="@string/import_key_qr" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_import_key_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/private_key_encrypted_value"
+                android:inputType="text"
+                android:visibility="visible" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_new_key_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/edit_key_save" />
+
+            <Button
+                android:id="@+id/btn_new_key_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_cancel" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>
