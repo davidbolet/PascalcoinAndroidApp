@@ -113,6 +113,10 @@ public class PreferencesService {
         databaseHelper.insertNodes(newNode );
     }
 
+    public void updateNodeInfo(NodeInfo nodeInfo) {
+        databaseHelper.updateNodes(nodeInfo );
+    }
+
     public void addPrivateKey(PrivateKeyInfo newKey) {
         databaseHelper.insertKeys(newKey);
     }

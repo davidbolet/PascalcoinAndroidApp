@@ -1,10 +1,10 @@
 package org.pascalcoin.pascalcoinofficial.data;
 
-import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
+import android.arch.persistence.room.Update;
 
 import org.pascalcoin.pascalcoinofficial.model.NodeInfo;
 
@@ -21,6 +21,9 @@ public interface NodeInfoDao {
 
     @Query("SELECT COUNT(*) FROM "+Constants.NODES_TABLE)
     Integer getRowCount();
+
+    @Update
+    void update(NodeInfo nodeInfo);
 
     @Insert
     void insertAll(NodeInfo... nodeInfos);

@@ -39,9 +39,9 @@
                 android:id="@+id/key_type"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="http://www.pascalcoin.app:4003"
+                android:text="SECP256K1"
                 android:textSize="12sp"
-                android:layout_weight="50"
+                android:layout_weight="40"
                 android:layout_margin="@dimen/text_margin" />
             <ImageView
                 android:id="@+id/edit_key"

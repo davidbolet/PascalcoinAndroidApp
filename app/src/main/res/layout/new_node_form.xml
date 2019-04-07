@@ -9,11 +9,10 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:theme="@style/AppTheme.AppBarOverlay">
-
-
         <TextView
             android:layout_width="match_parent"
-            android:text="New Node"
+            android:id="@+id/title_add_node"
+            android:text="@string/node_add"
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:layout_marginTop="15dp"
@@ -38,9 +37,8 @@
             android:layout_height="wrap_content">
         <EditText
             android:id="@+id/txt_node_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:maxLength="127"
             android:layout_marginTop="5dp"
             android:visibility="visible"
@@ -53,22 +51,55 @@
             android:layout_height="wrap_content">
         <EditText
             android:id="@+id/txt_node_uri"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:visibility="visible"
-            android:ems="10"
             android:hint="@string/node_ip"
             android:inputType="textUri" />
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:id="@+id/btn_new_node_check"
-            android:tooltipText="@string/check_connection"
-            android:background="@drawable/ic_sync_black_24dp"
-            android:hint="@string/check_connection"
-            />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/btn_new_node_check"
+                android:layout_marginEnd="10dp"
+                android:tooltipText="@string/check_connection"
+                android:background="@drawable/ic_sync_black_24dp"
+                android:hint="@string/check_connection"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/txt_check_url"
+                android:id="@+id/txt_check_url"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:text="(Result)"
+                android:id="@+id/result_text"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/result_ok"
+                android:src="@drawable/ic_ok"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/result_ko"
+                android:src="@drawable/ic_ko"
+                />
         </android.support.v7.widget.LinearLayoutCompat>
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_marginTop="30dp"
@@ -91,4 +122,5 @@
     </android.support.v7.widget.LinearLayoutCompat>
     </android.support.v7.widget.LinearLayoutCompat>
     </ScrollView>
+
 </LinearLayout>

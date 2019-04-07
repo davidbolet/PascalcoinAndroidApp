@@ -28,6 +28,7 @@
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/add_key"
             android:layout_width="wrap_content"
+            android:tooltipText="@string/keys_add"
             android:layout_height="wrap_content"
             android:paddingEnd="50dp"
             app:srcCompat="@drawable/ic_plus" />
@@ -36,6 +37,7 @@
             android:layout_marginStart="120dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:tooltipText="@string/import_private_key"
             android:src="@drawable/ic_import"
             android:layout_marginBottom="@dimen/fab_margin"
               />

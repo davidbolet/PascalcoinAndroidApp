@@ -236,5 +236,10 @@
     <string name="keep_key_encrypted">Keep key encrypted in android database (More secure, but password will be asked on every usage)</string>
     <string name="paste_key">Paste key from clipboard</string>
     <string name="default_node">https://europe-1.pascalcoin.app</string>
+    <string name="txt_check_url">Check Url</string>
+    <string name="txt_edit_node">Edit Node...</string>
+    <string name="txt_error_connect_200_empty_body">Connection returned 200 but empty body on NodeStatus</string>
+    <string name="error_contacting_node">Error contacting node!</string>
+    <string name="error_invalid_url">Invalid url specified</string>
 
 </resources>

@@ -86,6 +86,7 @@ import org.pascalcoin.pascalcoinofficial.event.NewNodeEvent;
 import org.pascalcoin.pascalcoinofficial.event.NoConnectionErrorEvent;
 import org.pascalcoin.pascalcoinofficial.event.NodeAddedEvent;
 import org.pascalcoin.pascalcoinofficial.event.NodeDeletedEvent;
+import org.pascalcoin.pascalcoinofficial.event.NodeUpdatedEvent;
 import org.pascalcoin.pascalcoinofficial.event.OperationExecEvent;
 import org.pascalcoin.pascalcoinofficial.event.PascPriceEvent;
 import org.pascalcoin.pascalcoinofficial.event.PreferenceChangedEvent;
@@ -390,6 +391,9 @@ public class AccountActivity extends AppCompatActivity implements
     }
 
     private void signOut() {
+        moveTaskToBack(true);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
     }
 
     /********** UPPER MENU ***********/
@@ -815,6 +819,13 @@ public class AccountActivity extends AppCompatActivity implements
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onNodeAddedEvent(NodeAddedEvent event) {
+        List<NodeInfo>  nodes=preferencesService.getNodeInfos();
+        if (nodeListFragment!=null)
+            nodeListFragment.setNodeList(preferencesService.getNodeInfos());
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onNodeUpdatedEvent(NodeUpdatedEvent event) {
         List<NodeInfo>  nodes=preferencesService.getNodeInfos();
         if (nodeListFragment!=null)
             nodeListFragment.setNodeList(preferencesService.getNodeInfos());
@@ -1265,13 +1276,19 @@ public class AccountActivity extends AppCompatActivity implements
     }
 
     @Override
-    public void onKeySelectedInteraction(final PrivateKeyInfo keyInfo, int operation) {
+    public void onKeySelectedInteraction(final PrivateKeyInfo keyInfo, final int operation) {
         switch (operation) {
             case OPERATION_DELETE:
                 new android.support.v7.app.AlertDialog.Builder(this).setTitle(getString(R.string.txt_delete_key)).setMessage(getString(R.string.txt_delete_key_confirm, keyInfo.getName())).setIcon(android.R.drawable.ic_dialog_alert).setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
-                        preferencesService.deletePrivateKey(keyInfo);
-                        loadKeysFragment();
+                        if (keyInfo.isEncrypted()) {
+                            showDialogPasswordPrompt( keyInfo, null, true);
+                        }
+                        else {
+                            preferencesService.deletePrivateKey(keyInfo);
+                            loadKeysFragment();
+                        }
+
                     }
                 }).setNegativeButton(android.R.string.no, null).show();
                 break;
@@ -1293,6 +1310,10 @@ public class AccountActivity extends AppCompatActivity implements
     }
 
     public void showDialogPasswordPrompt(final PrivateKeyInfo keyInfo, final PascOperation operation) {
+        showDialogPasswordPrompt( keyInfo,  operation, false);
+    }
+
+    public void showDialogPasswordPrompt(final PrivateKeyInfo keyInfo, final PascOperation operation, final boolean delete) {
         if (!keyInfo.isEncrypted())
             return;
         LayoutInflater li = LayoutInflater.from(getApplicationContext());
@@ -1318,8 +1339,13 @@ public class AccountActivity extends AppCompatActivity implements
                                     if (operation!=null) {
                                         pascalOperationsService.signAndExecute(operation, privateKey, keyInfo);
                                     } else {
-                                        keyInfo.setPrivateKey(privateKey);
-                                        EventBus.getDefault().post(new KeyDecodedEvent(keyInfo, password));
+                                        if (!delete) {
+                                            keyInfo.setPrivateKey(privateKey);
+                                            EventBus.getDefault().post(new KeyDecodedEvent(keyInfo, password));
+                                        } else {
+                                            preferencesService.deletePrivateKey(keyInfo);
+                                            loadKeysFragment();
+                                        }
                                     }
                                     dialog.dismiss();
                                 } catch(Exception ex) {
@@ -1353,7 +1379,9 @@ public class AccountActivity extends AppCompatActivity implements
                 }
             }).setNegativeButton(android.R.string.no, null).show();
                 break;
-            case OPERATION_NODE_EDIT: break;
+            case OPERATION_NODE_EDIT:
+                loadFormEditNode(nodeInfo);
+                break;
             case OPERATION_NODE_ADD:
                 loadFormNewNode();
                 break;
@@ -1362,12 +1390,24 @@ public class AccountActivity extends AppCompatActivity implements
     }
 
     public void loadFormNewNode() {
+        List<NodeInfo> nodeInfos = preferencesService.getNodeInfos();
         FragmentManager manager = getSupportFragmentManager();
         Fragment frag = manager.findFragmentByTag("fragment_add_node");
         if (frag != null) {
             manager.beginTransaction().remove(frag).commit();
         }
-        if (nodeAddFragment == null) nodeAddFragment = NodeAddFragment.newInstance(preferencesService);
+        if (nodeAddFragment == null) nodeAddFragment = NodeAddFragment.newInstance(preferencesService,nodeInfos,null);
+        nodeAddFragment.show(manager, "fragment_add_node");
+    }
+
+    public void loadFormEditNode(NodeInfo toEdit) {
+        List<NodeInfo> nodeInfos = preferencesService.getNodeInfos();
+        FragmentManager manager = getSupportFragmentManager();
+        Fragment frag = manager.findFragmentByTag("fragment_add_node");
+        if (frag != null) {
+            manager.beginTransaction().remove(frag).commit();
+        }
+        if (nodeAddFragment == null) nodeAddFragment = NodeAddFragment.newInstance(preferencesService,nodeInfos,toEdit);
         nodeAddFragment.show(manager, "fragment_add_node");
     }
 

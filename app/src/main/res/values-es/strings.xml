@@ -216,4 +216,9 @@
     <string name="keep_key_encrypted">Guardar clave encriptada en base de datos</string>
     <string name="paste_key">Pegar desde el portapapeles</string>
     <string name="default_node">https://europe-1.pascalcoin.app</string>
+    <string name="txt_check_url">Check Url</string>
+    <string name="txt_edit_node">Edit Node...</string>
+    <string name="txt_error_connect_200_empty_body">La conexión ha devuelto status 200 pero sin información en NodeStatus</string>
+    <string name="error_contacting_node">Error conectando con el nodo!</string>
+    <string name="error_invalid_url">La url introducida no es válida</string>
 </resources>

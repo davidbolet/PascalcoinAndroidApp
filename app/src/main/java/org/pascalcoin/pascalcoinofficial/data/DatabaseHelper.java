@@ -17,6 +17,7 @@ import org.pascalcoin.pascalcoinofficial.event.KeyDeletedEvent;
 import org.pascalcoin.pascalcoinofficial.event.KeyUpdatedEvent;
 import org.pascalcoin.pascalcoinofficial.event.NodeAddedEvent;
 import org.pascalcoin.pascalcoinofficial.event.NodeDeletedEvent;
+import org.pascalcoin.pascalcoinofficial.event.NodeUpdatedEvent;
 import org.pascalcoin.pascalcoinofficial.model.NodeInfo;
 import org.pascalcoin.pascalcoinofficial.model.PrivateKeyInfo;
 
@@ -122,6 +123,11 @@ public class DatabaseHelper {
         insertNodesTask.execute(nodeInfos);
     }
 
+    public void updateNodes(NodeInfo... nodeInfos) {
+        UpdateNodesTask updateNodesTask=new UpdateNodesTask(nodeInfoDao);
+        updateNodesTask.execute(nodeInfos);
+    }
+
     public void deleteNode(NodeInfo toDelete) {
         DeleteNodeTask deleteNodeTask=new DeleteNodeTask(nodeInfoDao);
         deleteNodeTask.execute(toDelete);
@@ -195,6 +201,30 @@ public class DatabaseHelper {
         @Override
         protected void onPostExecute(Void result) {
             EventBus.getDefault().post(new NodeAddedEvent(inserted));
+
+        }
+
+    }
+
+    private static class UpdateNodesTask extends AsyncTask<NodeInfo, Void, Void> {
+
+        private NodeInfoDao mAsyncTaskDao;
+        private NodeInfo updated;
+
+        UpdateNodesTask(NodeInfoDao dao) {
+            mAsyncTaskDao = dao;
+        }
+
+        @Override
+        protected Void doInBackground(final NodeInfo... nodeInfos) {
+            updated=nodeInfos[0];
+            mAsyncTaskDao.update(updated);
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+            EventBus.getDefault().post(new NodeUpdatedEvent(updated));
 
         }
 
