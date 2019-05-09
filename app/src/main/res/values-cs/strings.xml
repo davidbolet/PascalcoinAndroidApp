@@ -1,0 +1,246 @@
+<resources>
+
+    <string name="title_home">Moje účty</string>
+    <string name="navigation_account_explorer">Průzkumník</string>
+    <string name="navigation_charts">Grafy</string>
+    <string name="title_buy_account">Získat účet</string>
+    <string name="msg_invalid_login">Neplatné uživatelské jméno nebo heslo</string>
+    <string name="home_intro">Díky, že používáte peněženku Pascalcoin! </string>
+    <!-- activity_account -->
+    <string name="title_activity_account">Účet</string>
+    <string name="pasc_account_list">Moje účty (%d)</string>
+    <string name="pasc_account_list_txt">Moje účty</string>
+    <string name="pasc_account_explorer">Průzkumník účtu</string>
+
+    <!-- activity login -->
+    <string name="action_sign_in">Přihlásit</string>
+    <string name="action_register">Doposud neregistrován?</string>
+
+    <!-- activity_register -->
+    <string name="action_register_user">Vytvořit uživatele</string>
+    <string name="first_name">Jméno*</string>
+    <string name="last_name">Příjmení</string>
+    <string name="prompt_email">Email*</string>
+    <string name="prompt_password">Heslo*</string>
+    <string name="prompt_repeat_password">Zopakovat heslo*</string>
+    <string name="require_notifications">Povolit této aplikaci zasílat notifikace</string>
+    <string name="require_offers">Povolit této aplikaci zasílat obchodní nabídky</string>
+    <string name="allow_register">Souhlasím s uložením osobních údajů (emailu, jména) v této aplikaci a backendových systémech. Tímto také potvrzuji, že rozumím a akceptuji právní podmínky a zásady ochrany soukromí</string>
+    <string name="legal_conditions">&lt;a href="%s">Podmínky užívání&lt;/a></string>
+    <string name="privacy_policy">&lt;a href="%s">Zásady ochrany osobních údajů&lt;/a></string>
+    <string name="edit_register_save">Uložit změny</string>
+    <string name="action_sign_in_short">Přihlásit</string>
+    <string name="button_cancel">Storno</string>
+    <!-- General errors -->
+    <string name="error_invalid_email">Tato emailová adresa je neplatná</string>
+    <string name="error_invalid_password">Toto heslo je přílis krátké</string>
+    <string name="error_invalid_user">Uživatel %s neexistuje! Zaregistrujte se prosím</string>
+    <string name="error_incorrect_password">Toto heslo je neplatné</string>
+    <string name="error_password_requiered">Heslo je povinné</string>
+    <string name="error_field_required">Toto je povinné pole</string>
+    <string name="error_passwords_not_match">Chyba! Hesla nejsou shodná!</string>
+    <string name="error_google_signin">Chyba při přihlašování pomocí Google</string>
+
+
+    <string name="sell_account">Prodejní účet</string>
+    <string name="ops_account">Operace</string>
+    <string name="txt_send">Poslat PASC</string>
+    <string name="txt_transfer_account">Převodní účet</string>
+    <string name="show_intro">Ukázat úvodní text po startu</string>
+    <string name="txt_sending_from">Odeslat z:</string>
+    <string name="txt_dest_account">Cílový účet*</string>
+    <string name="txt_fee">Transakční poplatek</string>
+    <string name="txt_amount">Částka * </string>
+    <string name="payload">Obsah...</string>
+    <string name="encription_password">Heslo AES šifrování</string>
+    <string name="txt_confirm">Potvrdit</string>
+    <string name="payLoadEncriptionNone">Nezašifrováno</string>
+    <string name="payLoadEncriptionDest">Příjemce (pouze příjemce může dešifrovat)</string>
+    <string name="payLoadEncriptionSender">Odesílatel (pouze odesílatel může dešifrovat)</string>
+    <string name="payLoadEncriptionAes">AES šifrování zadaným heslem</string>
+    <string name="txt_send_pasc_from">Poslat PASC z účtu %d-%d (Aktuální stav %.4f PASC). Upozornění: I přes potíže s připojením je tato operace téměř okamžitá a nelze ji vrátit</string>
+    <string name="include_a_payload">Připojit obsah</string>
+    <string name="error_destination_account_requiered">Cílový účet musí být zadán</string>
+    <string name="error_invalid_amount">Částka k převodu musí být zadána a musí být vyšší než 0</string>
+    <string name="error_not_enogh_pasc">Částka k převodu včetně poplatku musí být nižší než částka na zdrojovém účtu</string>
+    <string name="logout_menu">Odhlásit</string>
+    <string name="about_menu">O aplikaci</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="about_pasc_menu">O kryptoměně Pascalcoin</string>
+    <string name="error_destination_account_different">Cílový účet musí být odlišný od zdrojového</string>
+    <string name="send_pasc_confirm">Potvrzení o odeslání. Zaslání %.4f PASC z účtu %d-%d na účet %d-%d. Potvrzujete?</string>
+    <string name="action_show_key">Ukázat můj vybraný veřejný klíč</string>
+    <string name="button_close">Zavřít</string>
+    <string name="txtPublicKey">Veřejný klíč ve formátu B58 HEX</string>
+    <string name="txt_pk_clipboard">Klíč uložen do schánky!</string>
+    <string name="mail_sent_text">Díky za registraci! Potvrzující email byl zaslán na adresu %s za účelem aktivace uživatele. Zkontrolujte prosím poštu a přihlaste se znovu.</string>
+    <string name="txt_send_account">Cílový účet</string>
+    <string name="txt_send_account_intro">Zaslat účet %d-%d (Zůstatek na účtu %.4f PASC) na jiný veřejný účet. Tato operace volá funkci \'changeKey\' v PascalCoin síti a měla by být vykonána na účtě v osobním uzlu.</string>
+    <string name="txt_scan_QR">Naskenovat QR kód</string>
+    <string name="txt_dest_pk">Nový veřejný klíč*</string>
+    <string name="txt_pay_account">Účet pro úhradu poplatku*</string>
+    <string name="txt_presentation">Vítejte v první aplikaci pro Pascalcoin\'! Z této aplikace máte pod kontrolou vaše účty (PASA) a můžete nakládat s vašemi coiny (PASC).\n\tNa začátku můžete si můžete vytvořit nový pár klíčů nebo importovat existující</string>
+    <string name="search_by_number">Hledat podle čísla...</string>
+    <string name="search_by_name">Hledat podle jména...</string>
+    <string name="error_not_enogh_pasc_to_transfer">Účet plátce nemá dostatečný zůstatek pro úhradu poplatku. Vyberte jiný účet plátce nebo snižte výši poplatku</string>
+    <string name="send_acc_confirm">Souhlasíte s úhradnou na cílový účet %d-%d s veřejným klíčem %s? Tuto akci nelze vzít zpět</string>
+    <string name="error_invalid_account_specified">Určen neplatný účet</string>
+    <string name="error_user_not_enabled">Chyba: Uživatel %s existuje ale stále není povolený! Zkontrolujte email a použijte odkaz pro aktivaci!</string>
+    <string name="error_timeout">Došlo k chybě při připojování k serveru :( Zkuste to znovu za chvíli</string>
+    <string name="forgot_password">Zapomněli jste heslo?</string>
+    <string name="forgot_password_title">Zapomenuté heslo</string>
+    <string name="txt_password_link_sent">Instrukce pro obnovení hesla byly odeslány na email</string>
+    <string name="txt_register_ok">Registrace uživatele</string>
+    <string name="msg_user_updated">Uživatel %s úspěšně změněn</string>
+    <string name="account_no_operations">Tento účet nemá žádné operace</string>
+    <string name="txt_session_expired">Vaše relace s backendovým serverem vypršela, přihlašte se znovu</string>
+    <string name="no_accounts_found">Nenalezen účet odpovídající kritériím</string>
+    <string name="error_server_security">Vyskytl se problém s autorizací běhěm komunikace s backendovým serverem, uživatelská relace pravděpodobně vypršela. Prosím, přihlaste se znovu.</string>
+    <string name="txt_buy_account_intro">K nakládání s PascalCoiny potřebujete PASA (zkratka pro PAScalcoin Account, nebo-li účet). A PASA je rozhraní mezi soukromým klíčem and sítí PascalCoinu, z které můžete přijímat a posílat vaše PASC (PASCalcoiny).</string>
+    <string name="buy_pascalcoin_account">Koupit PascalCoin účet za %.2f %s</string>
+    <string name="transaction_created">Účet úspěšně zakoupen! Bude pro vás dostupný během několika minut. Operaci můžete monitorovat &lt;a href="%s">Zde&lt;/a> Obnovit \'Moje účty\' tlačítkem</string>
+    <string name="pascalcoin_info">O kryptoměně Pacalcoin</string>
+    <string name="txt_pascalcoin_intro">PascalCoin je velmi inovativní kryptoměna, která nabízí užitečné a unikátní vlastnosti, jako je nekonečná škálovatelnost, uživatelsky přívětivé pojetí účtů, apod... Pro více informací o kryptoměně navštivte:</string>
+    <string name="txt_link_pascalcoin"><a href="http://pascalcoin.org/">Stránky PascalCoinu</a></string>
+    <string name="txt_link_pascalcoin_discord"><a href="https://discord.gg/sJqcgtD">Připojte se k nám na Discordu</a></string>
+    <string name="txt_link_pascalcoin_twitter"><a href="https://twitter.com/PascalCoin">PascalCoin na Twitteru</a></string>
+    <string name="txt_link_pascalcoin_facebook"><a href="https://www.facebook.com/PascalCoin-850645181770093">Sledujte PascalCoin na Facebook</a></string>
+    <string name="app_info">O aplikaci PascalCoin</string>
+    <string name="txt_app_intro">Z této aplikace můžete spravovat vaše PASC and PASA. Nicméně buďte opatrní, protože tento software je experimentální! Mějte na paměti, že z důvodu stávajících omezení v infrastruktuře mějte na paměti toto: 1) Váš pár klíčů (veřejný a soukromý) byly vytvořeny na serveru během registrace. Soukromý klíč existuje na serveru a není jej možné exportovat. 2) Server je rozumně zabezpečen, nicméně nelze spolehlivě zaručit, že nebude napaden. 3) Lze zakoupit či převést vaše účty do aplikace. Pro držení vašich aktiv je nejrozumnější využít peněženku na vašem domácím počítači, který máte pod kontrolou.</string>
+    <string name="block_op">Blok/Op</string>
+    <string name="datetime">Čas</string>
+    <string name="sender">Odesílatel</string>
+    <string name="amount">Částka</string>
+    <string name="receiver">Příjemce</string>
+    <string name="no_payload">Obsah nepřipojen</string>
+    <string name="could_not_decrypt_payload">Obsah nemohl být dešifrován</string>
+    <string name="payload_passwords">Heslo pro dekódování obsahu (můžete specifikovat nějaké oddělené čárkou)</string>
+    <string name="txtUserFunds">Celkem: %.2f PASC (%.2f %s)</string>
+    <string name="prompt_current_password">Stávající heslo:</string>
+    <string name="prompt_new_password">Nové heslo:</string>
+    <string name="prompt_repeat_new_password">Nové heslo (znovu):</string>
+    <string name="change_password">Změna hesla</string>
+    <string name="descr_overflow_button">Nová operace</string>
+    <string name="change_account_info">Změnit informace účtu</string>
+    <string name="more_ops">Více...</string>
+    <string name="txt_change_account">Změnit informace o účtu</string>
+    <string name="txt_change_account_short">Zm. info ú.</string>
+    <string name="txt_change_account_intro">Změnit info účtu: Můžete pojmenovat účet unikátním jménem nebo přiřadit speciální typ.</string>
+    <string name="txt_new_account_name">Nové jméno účtu</string>
+    <string name="txt_new_account_type">Nový typ účtu</string>
+    <string name="error_change_account_requiered">Musíte specifikovat nové jméno pro účet, nový typ nebo obojí!</string>
+    <string name="change_acc_confirm">Opravdu si přejete změnit jméno účtu %d-%d na %s a/nebo typ na %d?</string>
+    <string name="error_too_long">Jméno účtu musí být kratší než 65 znaků</string>
+    <string name="error_too_short">Jméno účtu musí mít obsahovat nejméně 3 znaky</string>
+    <string name="error_invalid_chars">Chyba: neplatné znaky! Jméno účtu nesmí obsahovat mezery a nesmí začínat číslem</string>
+    <string name="error_too_many_requests">Překročen limit neúspěšných pokusů o přihlášení! Uživatel byl deaktivován na 10 minut</string>
+    <string name="delist_account">Zrušit prodej</string>
+    <string name="list_account_sale">Nabídnout účet %d k prodeji</string>
+    <string name="txt_sell_account_intro">Z této obrazovky lze označit účet k prodeji, specifikovat cenu (v PASC), a určit účet pro přijetí zaplacené částky. V současnosti jsou implementovány pouze veřejné prodeje.</string>
+    <string name="txt_seller_account">Prodávající účtu (obdrží částku)</string>
+    <string name="txt_price">Cena</string>
+    <string name="error_sell_price_account_requiered">Musíte specifikovat cenu za účet</string>
+    <string name="sell_acc_confirm">Opravdu si přejete nabídnout účet %d-%d na prodej za %.4f PASC?</string>
+    <string name="logout_confirm">Opravdu si přejete odhlásit?</string>
+    <string name="delist_account_sale">Zrušit prodej účtu %d</string>
+    <string name="txt_cancel_sell_account_intro">Z této obrazovky můžete stáhnout vybrané nabídky k prodeji. Účet bude odstraněn z veřejného seznamu nabídek.</string>
+    <string name="cancel_sell_acc_confirm">Opravdu si přejete odstranit účet %d-%d ze seznamu nabídek k prodeji?</string>
+    <string name="buy_acc_confirm">Opravdu si přejete koupit účet %d-%d?</string>
+    <string name="error_max_zero_fee_operations">Chyba, operace bez poplatku podléhají limitu 1 na blok a účet</string>
+    <string name="buy_an_account_with_btc">Koupit účet za Bitcoiny (Btc)</string>
+    <string name="buy_an_account_with_eth">Koupit účet za Ethereum (Eth)</string>
+    <string name="buy_an_account_with_pasc">Koupit účet za PascalCoin (Pasc)</string>
+    <string name="transation_created">Transakce vytvořena.</string>
+    <string name="title_activity_settings">Nastavení</string>
+
+    <string name="title_menu_connection_nodes">Uzly</string>
+    <string name="title_menu_private_keys">Privátní klíče</string>
+    <!-- Strings related to Settings -->
+
+    <!-- General settings -->
+    <string name="pref_header_general">Obecné</string>
+
+    <string name="pref_title_display_name">Preferovaná měna</string>
+
+    <string name="pref_title_add_friends_to_messages">Preferovaná měna</string>
+
+
+
+
+
+
+
+
+
+    <string name="selected_public_key_title">Vybraný klíč</string>
+    <string name="keys_add">Přidat klíč...</string>
+    <string name="selected_node_title">Uzel pro připojení</string>
+    <string name="node_add">Přidat uzel...</string>
+    <string name="operation_deployed">Operace vytvořena a odeslána do sítě Pascalcoin!</string>
+    <string name="node_name">Jméno uzlu</string>
+    <string name="node_ip">URI uzlu</string>
+    <string name="check_connection">Zkontrolovat připojení</string>
+    <string name="error_node_name_requiered">Jméno uzlu je povinné</string>
+    <string name="error_node_url_requiered">Url uzlu musí být zadáno</string>
+    <string name="msg_node_saved">Uzel uložen!</string>
+    <string name="error_node_name_already_exist">Uzel s tímto jménem již existuje</string>
+    <string name="new_key">Nový privátní klíč</string>
+    <string name="private_key_name">Jméno privátního klíče</string>
+    <string name="display_private_key">Zobrazit privátní klíč</string>
+    <string name="error_key_name_requiered">Jméno privátního klíče je povinné</string>
+    <string name="msg_key_saved">Privátní klíč uložen!</string>
+    <string name="generate_new_key">Import existujícího klíče</string>
+    <string name="private_key_value">(Privání klíč)</string>
+    <string name="button_generate">Generovat!</string>
+    <string name="private_key_type">Typ klíče</string>
+    <string name="edit_key_save">Uložit privátní klíč</string>
+    <string name="private_key_password">Heslo privátního klíče (neukládá se)</string>
+    <string name="encrypt_new_key">Zašifrovat nový klíč</string>
+    <string name="error_key_password_required">Šifrovací heslo je povinné</string>
+    <string name="private_key_import">Vložte privátní klíč v raw formátu</string>
+    <string name="private_key_import_encrypted">Vložte zašifrovaný privátní klíč</string>
+    <string name="error_private_key_not_typed">Privátní klíč nesmí být prázdný</string>
+    <string name="error_decrypting_private_key">Chyba dešifrování hesla: %s</string>
+    <string name="error_private_key_not_valid">Chybný privátní klíč (%s)</string>
+    <string name="speech_not_supported">Rozpoznávání hlasu není dostupné</string>
+    <string name="speech_prompt">Hlasová reč</string>
+    <string name="search_hint">Číslo účtu nebo jméno</string>
+    <string name="max_num_accounts">Počet účtů ke stažení</string>
+    <string name="advanced_search">Pokročilé vyhledávání</string>
+    <string name="txt_frag_buy_account_intro">Z této obrazovky lze zakoupit vybraný účet</string>
+    <string name="txt_pay_buy_account">Platící účet</string>
+    <string name="buy_account_sale">Zakoupení účtu %d</string>
+    <string name="txt_delete_node">Odstranit uzel</string>
+    <string name="delete_node_confirm">Chcete opravdu odstranit uzel %s?</string>
+    <string name="node_deleted">Uzel %s byl odstraněn</string>
+    <string name="instructions">Umístěte váš otisk prstu pro ověření vaší identity</string>
+    <string name="txt_use_fingerprint">Použijte otisk prstu</string>
+    <string name="txt_delete_key">Odstranit privátní klíč</string>
+    <string name="txt_delete_key_confirm">Chcete opravdu odstranit privátní klíč %s? Po odstranění již nebudete schopni přistoupit k účtům a PASC, které k němu náleží!!!</string>
+    <string name="key_is_encrypted">Tento privátní klíč je zašifrovaný. Vložte heslo pro dešifrování:</string>
+    <string name="connection_error">Chyba spojení</string>
+    <string name="txt_connection_error">Došlo k překročení časového intervalu pro připojení k backendovému serveru. Zkuste znovu pmocí obnovovacího tlačítka, nebo změňte nastavení pro uzel v Nastavení.</string>
+    <string name="edit_private_key">Editovat privátní klíč</string>
+    <string name="button_export">Exportovat privátní klíč</string>
+    <string name="encrypt_key">Uchovat klíč zašifrovaný (vyžaduje zadání hesla při každém použití)</string>
+    <string name="private_key_encrypted_value">Zašifrovaný privátní klíč (formát peněženky)</string>
+    <string name="private_key_raw_value">Privátní klíč "raw" (nakládejte opatrně!)</string>
+    <string name="search_hint_name">Jméno účtu</string>
+    <string name="search_hint_number">Číslo účtu</string>
+    <string name="txt_balance_range">Filtrování podle zůstatku (mezi)</string>
+    <string name="txt_select_key">Výběr klíče</string>
+    <string name="txt_filter_accounts_by_one_of_my_keys">Filtrovat účty podle jednoho z klíčů:</string>
+    <string name="txt_show_only_accounts_for_sale">Ukázat jen účty k prodeji</string>
+    <string name="txt_search">Hledat</string>
+    <string name="import_key_qr">Přečíst klíč z QR kódu</string>
+    <string name="import_private_key">Importovat privátní klíč peněženky</string>
+    <string name="keep_key_encrypted">Uchovat klíč zašifrovaný v android databázi (bezpečnější, ale budete tázání na heslo při každém použití)</string>
+    <string name="paste_key">Zkopírovat klíč ze schránky</string>
+
+    <string name="txt_check_url">Zkontrolovat Url</string>
+    <string name="txt_edit_node">Upravit uzel...</string>
+    <string name="txt_error_connect_200_empty_body">Spojení vrátilo kód 200 ale prázdné tělo v NodeStatusu</string>
+    <string name="error_contacting_node">Nepodařilo se kontaktovat uzel!</string>
+    <string name="error_invalid_url">Specifikováno neplatné url</string>
+
+</resources>
